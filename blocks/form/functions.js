@@ -32,6 +32,7 @@ function days(endDate, startDate) {
  * Set the minimum date for a date field. 
  * @param {date} date   
  * @param {scope} globals 
+ * @returns {void}
  */ 
 function setMinDate(date, globals){    
   globals.functions.setProperty(globals.field, {minimum: date});
