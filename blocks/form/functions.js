@@ -29,13 +29,9 @@ function days(endDate, startDate) {
 }
 
 /** 
-
  * Set the minimum date for a date field. 
-
- * @param {date} date 
-
+ * @param {date} date   
  * @param {scope} globals 
-
  */ 
 
 function setMinDate(date, globals){    
