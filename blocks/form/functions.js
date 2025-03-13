@@ -27,16 +27,14 @@ function days(endDate, startDate) {
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
-
-/** 
- * Set the minimum date for a date field. 
- * @param {date} date   
- * @param {scope} globals 
+/** 
+ * Set the minimum date for a date field. 
+ * @param {date} date   
+ * @param {scope} globals 
  * @returns {void}
- */ 
-function setMinDate(date, globals){    
+ */ 
+function setMinDate(date, globals){    
   globals.functions.setProperty(globals.field, {minimum: date});
-} 
-
+} 
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, setMinDate };
